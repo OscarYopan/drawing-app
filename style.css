@@ -6,16 +6,47 @@
 }
 
 /*Default*/
+:root {
+  --cor1: #0E7373;
+  --cor2: #17A6A6;
+  --cor3: #9AD9CD;
+  --cor4: #F2EFBD;
+  --cor5: #8C3535;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 html{
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 
 body{
+  background-color: var(--cor4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+}
+
+canvas {
+  background-color: var(--white);
+  border: .4rem solid var(--cor5);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.toolbox {
+  background-color: var(--cor5);
+  width: 808px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+}
+
+.toolbox > * { /* > * para pegar todos os itens filhos do toolbox*/
+  background-color: var(--white);
+  border: none;
 }
