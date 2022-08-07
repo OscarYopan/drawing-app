@@ -40,8 +40,6 @@ canvas {
   background-color: var(--cor5);
   width: 808px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 0 0 1rem 1rem;
   padding: 1rem;
 }
@@ -49,4 +47,17 @@ canvas {
 .toolbox > * { /* > * para pegar todos os itens filhos do toolbox*/
   background-color: var(--white);
   border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  height: 5rem;
+  width: 5rem;
+  margin: .25rem;
+  padding: .25rem;
+  cursor: pointer;
+}
+
+.toolbox >*:last-child {
+  margin-left: auto;
 }
