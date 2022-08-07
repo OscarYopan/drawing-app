@@ -61,3 +61,7 @@ canvas {
 .toolbox >*:last-child {
   margin-left: auto;
 }
+
+button:active {
+  transform: scale(0.98);
+}
