@@ -91,7 +91,7 @@ function canvasWidth() {
   let height = 0
   if (widthHeight[2] <= 500) {
     width = widthHeight[2] - 10
-    height = widthHeight[1] - 150
+    let height = widthHeight[1] - 150
     console.log(width, height)
   } else {
     width = 800
@@ -100,8 +100,6 @@ function canvasWidth() {
   canvas.style.width(`${width}`)
   canvas.style.height(`${height}`)
 }
-
-canvasWidth()
 
 function sectionHeight() {
   const height =
@@ -117,3 +115,5 @@ function sectionHeight() {
 
   return [height, width]
 }
+
+// canvasWidth()
