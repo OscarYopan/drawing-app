@@ -6,7 +6,7 @@ const colorEl = document.querySelector('#color')
 const sizeEl = document.querySelector('#size')
 const clearEl = document.querySelector('#clear')
 
-let size = 10
+let size = 5
 let isPressed = false
 let color = 'black'
 let x
